@@ -1,0 +1,85 @@
+package z
+
+import "fmt"
+
+// Struct Questions Declaration
+type question struct {
+	number int
+	label string
+	answer	string
+}
+
+type description struct {
+	number int
+	label string
+}
+
+// Var to save temp string
+var tempString string
+
+func initdata() {
+	// Keterangan gambar
+	var ketegranganGambar = [] description{
+		{number:1,label:""},
+		{number:2,label:""},
+		{number:3,label:""},
+		{number:4,label:""},
+		{number:5,label:""},
+		{number:6,label:""},
+		{number:7,label:""},
+		{number:8,label:""},
+		{number:9,label:""},
+		{number:10,label:""},
+		{number:11,label:""},
+		{number:12,label:""},
+		{number:13,label:""},
+		{number:14,label:""},
+		{number:15,label:""},
+		{number:16,label:""},
+		{number:17,label:""},
+		{number:18,label:""},
+		{number:19,label:""},
+		{number:20,label:""},
+		{number:21,label:""},
+		{number:22,label:""},
+		{number:23,label:""},
+		{number:24,label:""},
+		{number:25,label:""},
+		{number:26,label:""},
+		{number:27,label:""},
+		{number:28,label:"Mencret Berdarah"},
+		{number:29,label:"Makan daging"},
+		{number:30,label:"Makan jamur"},
+		{number:31,label:"Makan makanan kaleng"},
+		{number:32,label:"Minum susu"},
+		{number:33,label:"Keracunan Staphylococcus aureus"},
+		{number:34,label:"Keracunan jamur beracun"},
+		{number:35,label:"Keracunan Salmonellae"},
+		{number:36,label:"Keracunan Clostridium botulinum"},
+		{number:37,label:"Keracunan Clampylobacter"},
+	}
+
+	// Kombinasi Slice & Struct, membuat Slice berdasarkan struct
+	var questions = []question{
+		{number:1,label:"Apakah anda sering mengalami buang air besar (lebih dari 2 kali)",answer:"N"},
+		{number:2,label:"Apakah anda mengalami berak encer",answer:"N"},
+		{number:3,label:"Apakah anda mengalami berak berdarah",answer:"N"},
+		{number:4,label:"Apakah anda merasa lesu dan tidak bergairah",answer:"N"},
+		{number:5,label:"Apakah anda tidak selera makan",answer:"N"},
+		{number:6,label:"Apakah anda merasa mual dan sering muntah (lebih dari 1)",answer:"N"},
+		{number:7,label:"Apakah anda merasa sakit di bagian perut",answer:"N"},
+		{number:8,label:"Apakah tekanan darah anda rendah",answer:"N"},
+		{number:9,label:"Apakah anda merasa pusing",answer:"N"},
+		{number:10,label:"Apakah anda mengalami pusing",answer:"N"},
+		{number:11,label:"Apakah suhu badan anda tinggi",answer:"N"},
+		{number:12,label:"Apakah anda mengamali luka dibagian tertantu",answer:"N"},
+		{number:13,label:"Apakah anda tidak dapat menggerakkan anggota badan tertentu",answer:"N"},
+		{number:14,label:"Apakah anda pernah memakan sesuatu",answer:"N"},
+		{number:15,label:"Apakah anda memakan daging",answer:"N"},
+		{number:16,label:"Apakah anda memakan jamur",answer:"N"},
+		{number:17,label:"Apakah anda memakan makanan kaleng",answer:"N"},
+		{number:18,label:"Apakah anda membeli susu",answer:"N"},
+		{number:19,label:"Apakah anda meminum susu",answer:"N"},
+	}
+
+}

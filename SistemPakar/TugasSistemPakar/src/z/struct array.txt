@@ -1,0 +1,33 @@
+package main
+
+import (
+	"fmt"
+)
+
+type Angka int
+
+type Data struct{
+	key int
+	angka []Angka
+
+}
+
+func main() {
+ar := []Data{
+  Data{
+    key: 33,
+    angka: []Angka{20,21,23,29},
+  },
+  Data{
+    key: 34,
+    angka: []Angka{20,21,24,30},
+  },
+  Data{
+    key: 35,
+    angka: []Angka{20,21,22,25,26,29},
+  },
+}
+
+fmt.Println(ar)
+
+}
